@@ -18,8 +18,8 @@ can be edited by the user. This allows to add all chords,
 scales, intervals and chord progressions the user is keen on by 
 himself without restrictions. 
 
-I encourage everyone to read a good book on music theorie. Keen little 
-rabbit ears is just a program to practise ear training and not a tutorial.
+I encourage everyone to read a good book on music theory. Keen little 
+rabbit ears is just a program to practice ear training and not a tutorial.
 And keen little rabbit ears is not too fast, because it uses
 an external program to play MIDI files. This design drawback
 allows on the other side rapid prototyping which is more
@@ -31,12 +31,9 @@ INSTALLATION and PORTING
 Keen little rabbit ears requires the installation of Perl 
 (Version 5), Perl/Tk, Perl::MIDI and an external
 MIDI player, like timidity (Version 0.2i). 
-Keen little rabbit ears is written in perl, uses Perl/Tk 
+Keen little rabbit ears is written in Perl, uses Perl/Tk 
 for the user interface, Perl::MIDI to write MIDI 
 files and timidity to play MIDI files.
-
-See http://www.forwiss.de/~msnutt/sound/keenlittlerabbitears/
-for the installation details.
 
 Do not forget I prefer Linux. Don't ask me about the windows 
 installation. I know it works!
@@ -119,7 +116,7 @@ TODO
 
 - DOCUMENTATION
 - more sophisticated training algorithm
-- dictation/melody test mode (play a melodie and let the user write it down)
+- dictation/melody test mode (play a melody and let the user write it down)
 - Changes to the GUI
 - A bit code cleaning, esp. for the Tk interface
 
@@ -143,7 +140,6 @@ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 ####################################################
 AUTHOR:
 
-Matthias Nutt (nutt@forwiss.de_antispam_)
-remove _antispam_ from email address to contact me. 
+Matthias Nutt
 
 September 1999
