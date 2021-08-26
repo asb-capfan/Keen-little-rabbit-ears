@@ -2,54 +2,54 @@ Changelog for Keen Little Rabbit Ears:
 --------------------------------------
 
 Version 0.8:
-        now with:
-	- Quiz mode
-	- advanced root note selection
-	- extension to playing direction (both)
-	- highlighting of selected instrument / root note 
-	- 440 Hz (sing an "a" test)
-	- bug fix (pitch drill)
+    now with:
+    - Quiz mode
+    - advanced root note selection
+    - extension to playing direction (both)
+    - highlighting of selected instrument / root note 
+    - 440 Hz (sing an "a" test)
+    - bug fix (pitch drill)
 
 Version 0.7:
-        now with:
-        - possible training of chord sequences
-        - bug fixes (window closing)
+    now with:
+    - possible training of chord sequences
+    - bug fixes (window closing)
 
 Version 0.6:
-	now with:
-	- configuration file can be given on the command line
-	- "Wrong after wrong" problem solved
-	- use right button to play the underlying tones right now
-	- reverse playing (if wanted) 
-	  // Code by Rafael Moreno
-	- code cleaning (sorting of entries)
+    now with:
+    - configuration file can be given on the command line
+    - "Wrong after wrong" problem solved
+    - use right button to play the underlying tones right now
+    - reverse playing (if wanted) 
+      // Code by Rafael Moreno
+    - code cleaning (sorting of entries)
 
 Version 0.5:
-        now with:
-        - configuration file
+    now with:
+    - configuration file
 
 Version 0.4:
-	now with:
-	- pitch drill
-        - selection of instruments
-	- tempo adjustment
-	- english names for all/most scales
-	- change of random root interval
-	- small changes to the GUI
+    now with:
+    - pitch drill
+    - selection of instruments
+    - tempo adjustment
+    - english names for all/most scales
+    - change of random root interval
+    - small changes to the GUI
 
 Version 0.3:
-	now with:
-	- better adaption to other MIDI players
-	- selection of intervals, chords and scales
-	- code cleaning
+    now with:
+    - better adaption to other MIDI players
+    - selection of intervals, chords and scales
+    - code cleaning
 
 Version 0.2:
-	now with:
-	- volume control 
-	- random root of intervals, scales and chords
+    now with:
+    - volume control 
+    - random root of intervals, scales and chords
 
 Version 0.1: 
-	Initial release
+    Initial release
 
 
 Matthias Nutt
