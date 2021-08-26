@@ -1,0 +1,149 @@
+###################################################
+## WELCOME to KEEN LITTLE RABBIT EARS (Version 0.8)
+###################################################
+
+Keen little rabbit ears is a simple ear training program especially for 
+Linux but in runs under Windows as well. You can exercise the recognition of 
+intervals, chords, scales and chord progressions.
+
+###################################################
+GENERAL
+
+This is an early release, which means that there is a number of
+features which are not implemented. But keen little rabbit ears works 
+pretty fine on my Pentium 90 with Suse Linux (Version 6.1).
+
+Keen Little Rabbit Ears now comes with a configuration file that
+can be edited by the user. This allows to add all chords,
+scales, intervals and chord progressions the user is keen on by 
+himself without restrictions. 
+
+I encourage everyone to read a good book on music theorie. Keen little 
+rabbit ears is just a program to practise ear training and not a tutorial.
+And keen little rabbit ears is not too fast, because it uses
+an external program to play MIDI files. This design drawback
+allows on the other side rapid prototyping which is more
+desired here.
+
+###################################################
+INSTALLATION and PORTING
+
+Keen little rabbit ears requires the installation of Perl 
+(Version 5), Perl/Tk, Perl::MIDI and an external
+MIDI player, like timidity (Version 0.2i). 
+Keen little rabbit ears is written in perl, uses Perl/Tk 
+for the user interface, Perl::MIDI to write MIDI 
+files and timidity to play MIDI files.
+
+See http://www.forwiss.de/~msnutt/sound/keenlittlerabbitears/
+for the installation details.
+
+Do not forget I prefer Linux. Don't ask me about the windows 
+installation. I know it works!
+
+####################################################
+CONFIGURATION FILE
+
+When keen little rabbit ears starts it reads the configuration file.
+The configuration file contains all intervals, chords, scales
+and chord progressions that can be trained. You can easily edit the 
+configuration file to add new features. Assume you want to train 
+the recognition of different inversions of a simple major chord. 
+Just edit the configuration file and add the following lines:
+
+Chord voicings: Major (root);        Status: on; Tones: 0, 4, 7;
+Chord voicings: Major (inversion 1); Status: on; Tones: 4, 7, 12;
+Chord voicings: Major (inversion 2); Status: on; Tones: 7, 12, 16;
+
+This installs a new identifier named "Chord voicings" that will
+be displayed in the main window. Additionally the identifier is 
+associated with a list (a hash) that contains the voicings you 
+entered. The status "on" means, that the Chord is in the selection
+(and thus can be tested) when you open the drill window. 
+"Tones" is the list of tones which will be played. 0 means 
+the root and all other number are the number of semitones between 
+the root and the tone. Eg. 4 means major third, 7 is a perfect fifth. 
+Look at the configuration file and you will see it (in the interval
+section). The tone list can be as long as you want. You can even 
+enter kind of melodies. The only thing to regard is, that ONE ENTRY 
+has to be IN ONE LINE. This scheme opens a wide range of possibilities 
+to train your ears.
+
+You can even enter chord sequences. Take a look at the
+configuration file. There you will find some examples at the 
+end of the file. 
+
+Keen little rabbit ears allows to specify a file name on the 
+command line. If a file name is given, then this file will be 
+opened instead of the standard configuration file. This allows 
+to play around with many configuration files. Maybe you want one 
+for each student or different files for different lessons. 
+
+####################################################
+HOW SHALL I TRAIN?
+
+I strongly recommend everyone to read a good book on this. There 
+are several ways to train. In general you do it like this. In the 
+first level only select 2 or 3 items you already know or which are 
+the most common.  In the next level you proceed and add the next 2 
+common items. Below is are two lists, which can be used as guideline. 
+But it is usually better to ask your teacher which exercises should be 
+trained.
+
+Intervals:
+----------
+
+Level 1: fourth, fifth, octave 
+Level 2: add second, third
+Level 3: add minor second, minor third, minor fifth
+Level 4: add minor sixth, sixth
+Level 5: add ninth, and what ever you want
+
+Scales:
+---------
+
+Level 1: Major, harmonic minor
+Level 2: add melodic minor
+Level 3: add natural minor
+Level 4: add chromatic, wholetone
+Level 5: add pentatonic
+Level 6: add dorian, phrygian
+Level 7: add lydian, mixolydian
+Level 8: add locrian
+
+
+(By the way, if anybody knows a good answer to this, please let me know!)
+
+####################################################
+TODO
+
+- DOCUMENTATION
+- more sophisticated training algorithm
+- dictation/melody test mode (play a melodie and let the user write it down)
+- Changes to the GUI
+- A bit code cleaning, esp. for the Tk interface
+
+####################################################
+LICENSE:
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+####################################################
+AUTHOR:
+
+Matthias Nutt (nutt@forwiss.de_antispam_)
+remove _antispam_ from email address to contact me. 
+
+September 1999
