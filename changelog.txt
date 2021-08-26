@@ -1,6 +1,16 @@
 Changelog for Keen Little Rabbit Ears:
 --------------------------------------
 
+Version 0.9:
+    now with:
+    - no functional changes
+    - untabified code (use whitespace instead of tabs)
+    - removed outdated URL, added link to GitHub repo
+    - use warnings instead of -w
+    - use File::Spec to create portable paths
+    - Replaced hard-coded paths. use FindBin to locate configuration files and executables relative to the script.
+    - use File::Temp to manage temporary files instead of manually creating a temporary midi file
+
 Version 0.8:
     now with:
     - Quiz mode
