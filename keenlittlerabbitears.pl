@@ -77,7 +77,7 @@ if ($OSNAME =~ m/win/i) {
     my $patchdir = File::Spec->catdir($Bin, 'timidity', 'patch');
     $tmp_midi_file = File::Spec->catfile($Bin, 'ppitch.mid');
     
-    my $timidity_exe = File::Spec->catfile($Bin, 'timidity', 'timidity-con.exe');
+    my $timidity_exe = File::Spec->catfile($Bin, 'timidity', 'timidity-con.exe'); # change this line to your MIDI player
     $play_midi_file_command = sprintf('"%s" -R 10  -L "%s" "%s"', $timidity_exe, $patchdir, $tmp_midi_file);
 
     print "Keen Little Rabbit Ears $version uses the following command to play MIDI files\n";
