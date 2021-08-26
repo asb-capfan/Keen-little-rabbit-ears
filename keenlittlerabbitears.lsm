@@ -1,23 +1,23 @@
 Begin3
 Title:         keen little rabbit ears
-Version:       0.8 
+Version:       0.8
 Entered-date:  11-07-1999, 0.8
 Description:   Keen little rabbit ears is a simple ear training program. 
-               You can exercise the recogniton of intervalls, 
+               You can exercise the recognition of intervals, 
                chords, scales and chord progressions. 
                Keen little rabbit ears requires the installation of Perl 
-	       (Version 5), Perl/Tk, Perl::MIDI and a MIDI player, 
-               like timidity (Verion 0.2i). 
+               (Version 5), Perl/Tk, Perl::MIDI and a MIDI player, 
+               like timidity (version 0.2i). 
                Keen little rabbit ears is written in Perl, uses Perl/Tk 
                for the user interface, Perl::MIDI to write MIDI 
                files and timidity to play MIDI files. But any
                other MIDI player can also be used.
 Keywords:      Eartrainer, Sound, Perl, MIDI, Timidity 
-Author:        nutt@forwiss.de (Matthias Nutt)
-Maintained-by: nutt@forwiss.de (Matthias Nutt)
-Primary-site:  sunsite.unc.edu /pub/Linux/apps/sound/misc/
+Author:        Matthias Nutt
+Maintained-by: Alexander Becker
+Primary-site:  https://github.com/asb-capfan/Keen-little-rabbit-ears
 Alternate-site: 
-Original-site: http://www.forwiss.de/~msnutt/sound/keenlittlerabbitears
+Original-site: https://github.com/asb-capfan/Keen-little-rabbit-ears
 Platforms:     Linux, Perl, Perl/Tk, Perl::MIDI
 Copying-policy: GPL
 End
