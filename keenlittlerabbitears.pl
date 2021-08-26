@@ -479,8 +479,7 @@ sub select_instrument {
     # Window already opened?
     return if (Exists($select_instrument_window));
 
-    $select_instrument_window =
-      $main_window->Toplevel(-title => "Select instrument");
+    $select_instrument_window = $main_window->Toplevel(-title => "Select instrument");
 
     $instrument_listbox_frame = $select_instrument_window->Frame();
     $instrument_listbox_frame->pack();
@@ -765,42 +764,41 @@ sub add_labels_and_buttons_on_bottom {
 
         # -command => [ \& stop_drill_exercise ]
         -command => sub { destroy $drill_window }
-      )->pack(
+    )->pack(
         -fill   => "both",
         -expand => "no",
         -side   => "right"
-      );
+    );
 
-    $select_button_frame =
-      $drill_frame_bottom->Frame()->pack(-expand => "both", -fill => "both");
+    $select_button_frame = $drill_frame_bottom->Frame()->pack(-expand => "both", -fill => "both");
 
     $select_button_frame->Button(
         -text    => "Select instrument",
         -command => [ \&select_instrument ]
-      )->pack(
+    )->pack(
         -fill   => "both",
         -expand => "yes",
         -side   => "left"
-      );
+    );
 
     if ($act_chords != $tones) {
         $select_button_frame->Button(
             -text    => "Select root",
             -command => [ \&select_root_tone ]
-          )->pack(
+        )->pack(
             -fill   => "both",
             -expand => "yes",
             -side   => "left"
-          );
+        );
     }
     $select_button_frame->Button(
         -text    => "440Hz",
         -command => [ \&play_440Hz ]
-      )->pack(
+    )->pack(
         -fill   => "both",
         -expand => "yes",
         -side   => "left"
-      );
+    );
 
     $volume_frame = $drill_frame_bottom->Frame();
     $volume_frame->pack();
@@ -850,20 +848,20 @@ sub add_labels_and_buttons_on_bottom {
             -variable => \$play_mode,
             -value    => $scale_like,
             -text     => "scale like"
-          )->pack(
+        )->pack(
             -side   => "left",
             -fill   => "both",
             -expand => "yes"
-          );
+        );
         $play_mode_frame->Radiobutton(
             -variable => \$play_mode,
             -value    => $chord_like,
             -text     => "chord like"
-          )->pack(
+        )->pack(
             -side   => "right",
             -fill   => "both",
             -expand => "yes"
-          );
+        );
 
         $play_direction_frame = $drill_frame_bottom->Frame();
         $play_direction_frame->pack();
@@ -876,31 +874,31 @@ sub add_labels_and_buttons_on_bottom {
             -variable => \$direction,
             -value    => $direction_ascending,
             -text     => "ascending"
-          )->pack(
+        )->pack(
             -side   => "left",
             -fill   => "both",
             -expand => "yes"
-          );
+        );
 
         $play_direction_frame->Radiobutton(
             -variable => \$direction,
             -value    => $direction_descending,
             -text     => "descending"
-          )->pack(
+        )->pack(
             -side   => "left",
             -fill   => "both",
             -expand => "yes"
-          );
+        );
 
         $play_direction_frame->Radiobutton(
             -variable => \$direction,
             -value    => $direction_both,
             -text     => "both"
-          )->pack(
+        )->pack(
             -side   => "left",
             -fill   => "both",
             -expand => "yes"
-          );
+        );
 
     } else {
         $direction = $direction_ascending;
@@ -958,9 +956,7 @@ sub read_configuration_file {
     my $tone_list_length   = 0;
 
     # open configuration file
-    open(IN, $filename)
-      || die
-      "Keen Little Rabbit Ears $version can not open $configuration_file.\n";
+    open(IN, $filename) || die "Keen Little Rabbit Ears $version can not open $configuration_file.\n";
 
     while (defined($line = <IN>)) {
 
@@ -1150,7 +1146,7 @@ foreach $element (
         $all_tone_lists->{$a}->{"sortkey"}
           <=> $all_tone_lists->{$b}->{"sortkey"}
     } keys %$all_tone_lists
-  ) {
+) {
 
     $main_window->Button(
         -text    => "$element",
